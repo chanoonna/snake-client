@@ -16,6 +16,8 @@ const connect = function() {
     console.log("Connection established.");
   });
 
+  conn.write(`Name: CNA`);
+
   conn.on("data", (data) => {
     console.log(`The server says ${data}`);
   });
